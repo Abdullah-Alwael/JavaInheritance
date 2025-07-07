@@ -43,13 +43,13 @@ public class Main {
 
         System.out.println("Circle 3's perimeter is: " + c3.getPerimeter());
 
-        System.out.println("Circle 4's color is "+c4.getColor());
+        System.out.println("Circle 4's color is " + c4.getColor());
         c4.setColor("Brown");
-        System.out.println("Circle 4's color changed to "+c4.getColor());
+        System.out.println("Circle 4's color changed to " + c4.getColor());
 
-        System.out.println("Circle 5's filled? "+c5.isFilled());
+        System.out.println("Circle 5's filled? " + c5.isFilled());
         c5.setFilled();
-        System.out.println("Circle 5's filled? changed to "+c5.isFilled());
+        System.out.println("Circle 5's filled? changed to " + c5.isFilled());
 
         System.out.println(c5);
 
@@ -62,14 +62,14 @@ public class Main {
         Rectangle r5 = new Rectangle(8.8, 3.4);
 
         System.out.println("Rectangle 1 has width of: " + r1.getWidth());
-        System.out.println("Rectangle 1 has color of: "+r1.getColor());
+        System.out.println("Rectangle 1 has color of: " + r1.getColor());
         r1.setColor("lightBlue");
-        System.out.println("Rectangle 1 has changed color to: "+r1.getColor());
+        System.out.println("Rectangle 1 has changed color to: " + r1.getColor());
 
         System.out.println("Rectangle 2 has length of: " + r2.getLength());
-        System.out.println("Rectangle 2 is filled?: "+r2.isFilled());
+        System.out.println("Rectangle 2 is filled?: " + r2.isFilled());
         r2.setFilled();
-        System.out.println("Rectangle 2 is filled? has changed to: "+r2.isFilled());
+        System.out.println("Rectangle 2 is filled? has changed to: " + r2.isFilled());
 
         System.out.println("Rectangle 3 has length of: " + r3.getLength());
         r3.setLength(-55); // can not be negative
@@ -100,10 +100,31 @@ public class Main {
         s1.setSide(0); // can not be zero
         s1.setSide(12);
         System.out.println("Square 1 side changed size to: " + s1.getSide());
+        System.out.println("Square's 1 color is " + s1.getColor());
+        s1.setColor("PaleYellow");
+        System.out.println("Square's 1 color changed to " + s1.getColor());
 
-        System.out.println(s2);
-        System.out.println(s3);
-        System.out.println(s4);
+        System.out.println("Square 2 has width of: " + s2.getWidth());
+        s2.setWidth(15);
+        s2.setLength(15); // changed for consistency
+        System.out.println("Square 2 has changed width to: " + s2.getWidth());
+        System.out.println("Square 2 is filled? " + s2.isFilled());
+        s2.setFilled();
+        System.out.println("Square 2 is filled? changed to " + s2.isFilled());
+
+        System.out.println("Square 3 has length of: " + s3.getLength());
+        s3.setLength(11);
+        s3.setWidth(11); // changed for consistency
+        System.out.println("Square 3 has changed length to: " + s3.getLength());
+
+        // following methods were not overridden: not needed
+        System.out.println("Square 4's side is: " + s4.getSide());
+        System.out.println("Square 4's area (rectangle's formula) is " + s4.getArea());
+        System.out.println("Square 4's area manually calculated A=side*side = " + (s4.getSide() * s4.getSide()));
+
+        System.out.println("Square 5's side is: " + s5.getSide());
+        System.out.println("Square 5's perimeter (rectangle's formula) is " + s5.getPerimeter());
+        System.out.println("Square 5's perimeter calculated manually  is P=4*side = " + (4 * s5.getSide()));
         System.out.println(s5);
     }
 }

@@ -1,4 +1,5 @@
 package com.inheritance;
+
 public class Shape {
     private String color;
     private boolean filled;
@@ -24,6 +25,7 @@ public class Shape {
     public void setColor(String color) {
         this.color = color;
     }
+
     //setFilled will flip the answer
     public void setFilled() {
         this.filled = !this.filled;
@@ -32,9 +34,9 @@ public class Shape {
     public String toString() {
         String condition = "A Shape with color of " + getColor();
         if (isFilled()) {
-            condition +=" and filled";
+            condition += " and filled";
         } else {
-            condition +=" and not filled";
+            condition += " and not filled";
         }
         return condition;
     }
