@@ -20,7 +20,6 @@ public class Circle extends Shape {
         return radius;
     }
 
-    //TODO check for valid inputs
     public void setRadius(double radius) {
         if (radius <= 0) {
             System.out.println("Radius can not be negative or zero");

@@ -29,7 +29,7 @@ public class Square extends Rectangle {
     public String toString() {
         return "A Square with side=" + getSide() + ", which is a subclass of " + super.toString();
     }
-    //TODO: P = 4*side, but maybe it calculates it correct?
+    //TODO: P = 4*side, but maybe it calculates it correctly?
     // The perimeter of square is different than a rectangle
 
     //TODO: A = side*side, but maybe the calculation is correct?
