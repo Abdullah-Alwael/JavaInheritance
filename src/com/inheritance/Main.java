@@ -47,5 +47,28 @@ public class Main {
         System.out.println(c4);
         System.out.println(c5);
 
+        // create 5 rectangles:
+
+        Rectangle r1 = new Rectangle();
+        Rectangle r2 = new Rectangle(2.5,9.6);
+        Rectangle r3 = new Rectangle(6.1,4.3,"Cyan",true);
+        Rectangle r4 = new Rectangle(7.33,8.2,"Turquoise",false);
+        Rectangle r5 = new Rectangle(8.8,3.4);
+
+        System.out.println("Rectangle 1 has width of: "+r1.getWidth());
+        System.out.println("Rectangle 2 has length of: "+r2.getLength());
+
+        System.out.println("Rectangle 3 has length of: "+r3.getLength());
+        r3.setLength(66.3);
+        System.out.println("Rectangle 3 has changed length to: "+r3.getLength());
+
+        System.out.println("Rectangle 4 has width of: "+r4.getWidth());
+        r4.setWidth(71.2);
+        System.out.println("Rectangle 4 has changed width to: "+r4.getWidth());
+
+        System.out.println("Rectangle 5 has area of: "+r5.getArea());
+        System.out.println("Rectangle 5 has perimeter of: "+r5.getPerimeter());
+
+        System.out.println(r5);
     }
 }
