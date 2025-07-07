@@ -1,5 +1,4 @@
 package com.inheritance;
-
 // deadline 7 PM;
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +9,6 @@ public class Main {
 
         System.out.println(circle);
         System.out.println(rectangle);
-        // make logic checks in setters
 
         System.out.println("Is the circle filled? " + circle.isFilled());
         System.out.println("Is the rectangle filled? " + rectangle.isFilled());
@@ -59,10 +57,14 @@ public class Main {
         System.out.println("Rectangle 2 has length of: "+r2.getLength());
 
         System.out.println("Rectangle 3 has length of: "+r3.getLength());
+        r3.setLength(-55); // can not be negative
+        r3.setLength(0);// can not be zero
         r3.setLength(66.3);
         System.out.println("Rectangle 3 has changed length to: "+r3.getLength());
 
         System.out.println("Rectangle 4 has width of: "+r4.getWidth());
+        r4.setWidth(-66); // can not be negative
+        r4.setWidth(0); // can not be zero
         r4.setWidth(71.2);
         System.out.println("Rectangle 4 has changed width to: "+r4.getWidth());
 
@@ -70,5 +72,23 @@ public class Main {
         System.out.println("Rectangle 5 has perimeter of: "+r5.getPerimeter());
 
         System.out.println(r5);
+
+        // create 5 squares
+        Square s1 = new Square();
+        Square s2 = new Square(5);
+        Square s3 = new Square(16);
+        Square s4 = new Square(8, "red", true);
+        Square s5 = new Square();
+
+        System.out.println("Square 1 side size is: "+s1.getSide());
+        s1.setSide(-11); // can not be negative
+        s1.setSide(0); // can not be zero
+        s1.setSide(12);
+        System.out.println("Square 1 side changed size to: "+s1.getSide());
+
+        System.out.println(s2);
+        System.out.println(s3);
+        System.out.println(s4);
+        System.out.println(s5);
     }
 }
