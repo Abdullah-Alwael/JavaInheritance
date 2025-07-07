@@ -1,4 +1,5 @@
 package com.inheritance;
+
 // deadline 7 PM;
 public class Main {
     public static void main(String[] args) {
@@ -42,34 +43,48 @@ public class Main {
 
         System.out.println("Circle 3's perimeter is: " + c3.getPerimeter());
 
-        System.out.println(c4);
+        System.out.println("Circle 4's color is "+c4.getColor());
+        c4.setColor("Brown");
+        System.out.println("Circle 4's color changed to "+c4.getColor());
+
+        System.out.println("Circle 5's filled? "+c5.isFilled());
+        c5.setFilled();
+        System.out.println("Circle 5's filled? changed to "+c5.isFilled());
+
         System.out.println(c5);
 
         // create 5 rectangles:
 
         Rectangle r1 = new Rectangle();
-        Rectangle r2 = new Rectangle(2.5,9.6);
-        Rectangle r3 = new Rectangle(6.1,4.3,"Cyan",true);
-        Rectangle r4 = new Rectangle(7.33,8.2,"Turquoise",false);
-        Rectangle r5 = new Rectangle(8.8,3.4);
+        Rectangle r2 = new Rectangle(2.5, 9.6);
+        Rectangle r3 = new Rectangle(6.1, 4.3, "Cyan", true);
+        Rectangle r4 = new Rectangle(7.33, 8.2, "Turquoise", false);
+        Rectangle r5 = new Rectangle(8.8, 3.4);
 
-        System.out.println("Rectangle 1 has width of: "+r1.getWidth());
-        System.out.println("Rectangle 2 has length of: "+r2.getLength());
+        System.out.println("Rectangle 1 has width of: " + r1.getWidth());
+        System.out.println("Rectangle 1 has color of: "+r1.getColor());
+        r1.setColor("lightBlue");
+        System.out.println("Rectangle 1 has changed color to: "+r1.getColor());
 
-        System.out.println("Rectangle 3 has length of: "+r3.getLength());
+        System.out.println("Rectangle 2 has length of: " + r2.getLength());
+        System.out.println("Rectangle 2 is filled?: "+r2.isFilled());
+        r2.setFilled();
+        System.out.println("Rectangle 2 is filled? has changed to: "+r2.isFilled());
+
+        System.out.println("Rectangle 3 has length of: " + r3.getLength());
         r3.setLength(-55); // can not be negative
         r3.setLength(0);// can not be zero
         r3.setLength(66.3);
-        System.out.println("Rectangle 3 has changed length to: "+r3.getLength());
+        System.out.println("Rectangle 3 has changed length to: " + r3.getLength());
 
-        System.out.println("Rectangle 4 has width of: "+r4.getWidth());
+        System.out.println("Rectangle 4 has width of: " + r4.getWidth());
         r4.setWidth(-66); // can not be negative
         r4.setWidth(0); // can not be zero
         r4.setWidth(71.2);
-        System.out.println("Rectangle 4 has changed width to: "+r4.getWidth());
+        System.out.println("Rectangle 4 has changed width to: " + r4.getWidth());
 
-        System.out.println("Rectangle 5 has area of: "+r5.getArea());
-        System.out.println("Rectangle 5 has perimeter of: "+r5.getPerimeter());
+        System.out.println("Rectangle 5 has area of: " + r5.getArea());
+        System.out.println("Rectangle 5 has perimeter of: " + r5.getPerimeter());
 
         System.out.println(r5);
 
@@ -80,11 +95,11 @@ public class Main {
         Square s4 = new Square(8, "red", true);
         Square s5 = new Square();
 
-        System.out.println("Square 1 side size is: "+s1.getSide());
+        System.out.println("Square 1 side size is: " + s1.getSide());
         s1.setSide(-11); // can not be negative
         s1.setSide(0); // can not be zero
         s1.setSide(12);
-        System.out.println("Square 1 side changed size to: "+s1.getSide());
+        System.out.println("Square 1 side changed size to: " + s1.getSide());
 
         System.out.println(s2);
         System.out.println(s3);

@@ -2,7 +2,7 @@ package com.inheritance;
 
 public class Square extends Rectangle {
     public Square() {
-        super(1.0,1.0);
+        super(1.0, 1.0);
     }
 
     public Square(double side) {
