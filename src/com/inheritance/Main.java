@@ -17,8 +17,8 @@ public class Main {
         System.out.println("The rectangle's color is " + rectangle.getColor());
         circle.setColor("Yellow");
         rectangle.setColor("Purple");
-        circle.setFilled(); // flips the previous condition.
-        rectangle.setFilled();
+        circle.setFilled(false); // flips the previous condition.
+        rectangle.setFilled(true);
         System.out.println("Is the circle filled? " + circle.isFilled());
         System.out.println("Is the rectangle filled? " + rectangle.isFilled());
         System.out.println("The circle's color is " + circle.getColor());
@@ -48,7 +48,7 @@ public class Main {
         System.out.println("Circle 4's color changed to " + c4.getColor());
 
         System.out.println("Circle 5's filled? " + c5.isFilled());
-        c5.setFilled();
+        c5.setFilled(false);
         System.out.println("Circle 5's filled? changed to " + c5.isFilled());
 
         System.out.println(c5);
@@ -68,7 +68,7 @@ public class Main {
 
         System.out.println("Rectangle 2 has length of: " + r2.getLength());
         System.out.println("Rectangle 2 is filled?: " + r2.isFilled());
-        r2.setFilled();
+        r2.setFilled(true);
         System.out.println("Rectangle 2 is filled? has changed to: " + r2.isFilled());
 
         System.out.println("Rectangle 3 has length of: " + r3.getLength());
@@ -109,7 +109,7 @@ public class Main {
         s2.setLength(15); // changed for consistency
         System.out.println("Square 2 has changed width to: " + s2.getWidth());
         System.out.println("Square 2 is filled? " + s2.isFilled());
-        s2.setFilled();
+        s2.setFilled(false);
         System.out.println("Square 2 is filled? changed to " + s2.isFilled());
 
         System.out.println("Square 3 has length of: " + s3.getLength());

@@ -26,9 +26,9 @@ public class Shape {
         this.color = color;
     }
 
-    //setFilled will flip the answer
-    public void setFilled() {
-        this.filled = !this.filled;
+
+    public void setFilled(boolean filled) {
+        this.filled = filled;
     }
 
     public String toString() {
